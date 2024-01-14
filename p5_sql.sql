@@ -1,0 +1,2 @@
+CREATE OR REPLACE FUNCTION keepcoding.fn_clean_int (entero INT64) RETURNS INT64 AS
+((SELECT CASE WHEN entero IS NULL THEN -999999 ELSE entero END ))
